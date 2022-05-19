@@ -168,9 +168,7 @@ void MainWindow::on_sendButton_clicked()
         show_data += QString("[%1]TX: %2").arg(ShowTimeLabel->text()).arg(rx_data);
         ui->RecvEdit->setText(show_data);
         serialport->write(tx_data);
-//
-//        ui->RecvEdit->setText(QString("[%1]TX: %2").arg(ShowTimeLabel->text()).arg(str));
-//
+
     }
 }
 
